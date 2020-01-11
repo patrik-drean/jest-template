@@ -1,3 +1,3 @@
-export const return1 = () => {
-  return 1
+export const add = (val1, val2) => {
+  return val1 + val2
 }

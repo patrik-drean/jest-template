@@ -1,9 +1,16 @@
-import { return1 } from './example'
+import { add } from './example'
 
-describe('Example test', () => {
-  describe('When testing 1', () => {
-    it('should return 1', () => {
-      expect(return1()).toBe(1)
-    })
+describe('add', () => {
+  it('adds positive numbers together', () => {
+    const result = add(3, 5)
+    const expected = 8
+
+    expect(result).toEqual(expected)
+  })
+  it('adds positive and negative numbers together', () => {
+    const result = add(2, -3)
+    const expected = -1
+
+    expect(result).toEqual(expected)
   })
 })
